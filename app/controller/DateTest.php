@@ -42,4 +42,9 @@ class DateTest{
 		$date['thh_is_dh'] = 2;
 		return Db::name('thh')->update($date);
 	}
+	public function query(){
+	    $thh = db::name('thh')->where('thh_id','=',195)->find();
+
+        return json($thh);
+    }
 }
