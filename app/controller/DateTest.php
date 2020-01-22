@@ -12,4 +12,9 @@ class DateTest{
 		$thh = Thh::select();
 		return \json($thh);
 	}
+	public function test(){
+		$thh = Db::name('thh')->where('thh_id',195)->find();
+		//\dump($thh);
+		return Db::getLastSql();
+	}
 }

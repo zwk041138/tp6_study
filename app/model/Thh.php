@@ -4,4 +4,3 @@
 class Thh extends model{
 	
 }
->
