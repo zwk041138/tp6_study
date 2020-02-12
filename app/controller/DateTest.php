@@ -4,6 +4,9 @@ use app\BaseController;
 use think\facade\Db;
 use app\model\Thh;
 class DateTest{
+    public function test2(){
+
+    }
 	public function index(){
 		$user = Db::table('lb_thh')->select();
 		return \json($user);
@@ -46,5 +49,8 @@ class DateTest{
 	    $thh = db::name('thh')->where('thh_id','=',195)->find();
 
         return json($thh);
+    }
+    public function time(){
+
     }
 }
